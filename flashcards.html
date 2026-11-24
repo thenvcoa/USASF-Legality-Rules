@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Glossary and rule flashcards">
+<meta name="theme-color" content="#22348c">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<title>Flashcards · Cheer Rules 25-26</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2322348c'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='900' font-size='28' fill='%23fff' text-anchor='middle'%3E25%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2322348c'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='900' font-size='28' fill='%23fff' text-anchor='middle'%3E25%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <div class="brand"><h1><a href="index.html">Cheer Rules Study Hub</a></h1><span class="yr">2025–26</span></div>
+  <nav class="tabs" aria-label="Pages"><a href="index.html">Home</a><a href="rule-maps.html">Rule maps</a><a href="flashcards.html" aria-current="page">Flashcards</a><a href="quiz.html">Practice quiz</a><a href="call-sheet.html">Call sheet</a><a href="watch-guide.html">Watch guide</a></nav>
+</div></header>
+<main class="wrap">
+<section>
+    <div class="intro"><div><h2>Flashcards</h2><p>Tap the card (or press Space) to flip it. Swipe or use the arrow keys to move between cards. Sort cards into "Got it" and "Review again" and study just the review pile.</p></div></div>
+    <div class="fc-wrap">
+      <div>
+        <div class="fc-stage"><div class="card" id="card" tabindex="0" role="button" aria-label="Flip card">
+          <div class="face front"><span class="k" id="fcCat"></span><div class="term" id="fcFront"></div><div class="hint">Click or press Space to flip</div></div>
+          <div class="face back"><span class="k" id="fcCat2"></span><div class="def" id="fcBack"></div></div>
+        </div></div>
+        <p class="swipehint">Tap to flip · swipe left or right for the next card</p>
+        <div class="fc-ctl">
+          <button class="btn" id="fcPrev">← Previous</button>
+          <span class="count" id="fcCount"></span>
+          <div style="display:flex;gap:8px"><button class="btn again" id="fcAgain">Review again</button><button class="btn good" id="fcGood">Got it</button><button class="btn pri" id="fcNext">Next →</button></div>
+        </div>
+      </div>
+      <aside class="side">
+        <div><label for="fcDeck">Deck</label><select id="fcDeck"><option value="g">Glossary terms</option><option value="r">Rule limits</option></select></div>
+        <div><label for="fcFilter">Category</label><select id="fcFilter"></select></div>
+        <div><label for="fcSearch">Search</label><input type="search" id="fcSearch" placeholder="e.g. cradle"></div>
+        <div><label for="fcPile">Show</label><select id="fcPile"><option value="all">All cards</option><option value="review">Review pile only</option><option value="new">Not yet marked</option></select></div>
+        <div><label for="fcSide">Front of card</label><select id="fcSide"><option value="term">Term / question</option><option value="def">Definition / answer</option></select></div>
+        <div><label>Progress</label><div class="prog"><i id="fcBar" style="width:0"></i></div>
+          <div class="stat" style="margin-top:6px"><span id="fcGot">0 got it</span><span id="fcRev">0 to review</span></div></div>
+        <div style="display:flex;gap:8px"><button class="btn" id="fcShuffle">Shuffle</button><button class="btn" id="fcReset">Reset marks</button></div>
+      </aside>
+    </div>
+  </section>
+  <p class="disclaimer">Study aid paraphrased from the USASF 2025–26 Cheer Rules (updated July 21, 2025). General Rules &amp; Routine Requirements and Athletic Performance Standards (pp. 10–11) are covered separately. The official rules document governs every call.</p>
+</main>
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
